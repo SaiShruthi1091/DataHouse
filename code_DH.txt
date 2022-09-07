@@ -1,0 +1,38 @@
+import javax.swing.*;
+
+public class JavaExample {
+public static void main(String[] args) {
+
+JFrame jFrame = new JFrame();
+
+String[][] tableData = {{"1", "Adam", "1", "5", "3", "1"},
+{"2", "John", "9", "4", "1", "6"},
+{"3", "Sam", "3", "2", "9", "5"};
+
+String[] tableColumn = {"ID", "FIRST NAME", "INTELLIGENCE", "STRENGTH", "ENDURANCE", "SPICYFOODTOLERANCE"};
+
+JTable jTable = new JTable(tableData, tableColumn);
+
+jTable.setBounds(30, 40, 230, 280);
+
+JScrollPane jScrollPane = new JScrollPane(jTable);
+jFrame.add(jScrollPane);
+jFrame.setSize(350, 300);
+jFrame.setVisible(true);
+}
+}
+import java.util.ArrayList;
+public class Average{
+Arraylist<jTable> nums = new ArrayList<Integer>;
+nums.add(10)
+nums.add(13)
+float sum= INTELLIGENCE+STRENGTH+ENDURANCE+SPICYFOODTOLERANCE;
+float sum=0;
+for(int num:nums){
+sum+= num;
+}
+float average= (sum/ nums.size());
+System.out.println("Average: " +average);
+}
+}
+
